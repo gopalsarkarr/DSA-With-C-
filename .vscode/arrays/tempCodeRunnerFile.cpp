@@ -1,0 +1,20 @@
+#include<iostream>
+#include<climits>
+using namespace std;
+int changefun(int arr[], int size){
+    cout << "in function" <<endl;
+    for(int i=0; i<size; i++){
+        arr[i]=2*arr[i];
+    }
+
+}
+int main()
+{
+    int arr[]={1, 2, 3};
+    changefun(arr, 3);
+    cout << "in main" <<endl;
+    for( int i=0; i<3; i++){
+        cout << arr[i] << " " << endl;
+    }
+    return 0;
+}
